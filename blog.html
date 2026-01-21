@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Local Book Stores | Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore the Local Book Stores blog for guides on finding bookstores in Canadian cities, supporting indie shops, planning bookstore crawls, and discovering local reading communities." />
+  <meta name="keywords" content="local book stores blog, Canadian bookstores blog, indie bookstores Canada, bookshop guides, bookstore crawls" />
+  <meta name="author" content="Local Book Stores" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Base styles -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-50 antialiased">
+  <!-- Announcement Bar -->
+  <div class="bg-gradient-to-r from-emerald-500 via-cyan-500 to-indigo-500 text-slate-900 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-4">
+      <p class="font-medium tracking-wide">
+        Fast Worldwide Shipping (5 days delivery) on all book orders.
+      </p>
+      <p class="hidden sm:block text-xs font-semibold uppercase tracking-wider">
+        100% Satisfaction Guarantee - Full refund upon return
+      </p>
+    </div>
+  </div>
+
+  <!-- Header / Navigation (Modified for Blog) -->
+  <header class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur border-b border-slate-800">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-4">
+      <div class="flex items-center justify-between w-full">
+        <a href="https://WebAutomatorHQ.github.io/local-book-stores-2026-01-21-eerfh" class="flex items-center gap-2">
+          <div class="h-9 w-9 rounded-lg bg-gradient-to-br from-emerald-400 via-cyan-400 to-indigo-400 flex items-center justify-center shadow-lg shadow-emerald-500/30">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-950" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 19.5A2.5 2.5 0 016.5 17H20M4 4.5A2.5 2.5 0 016.5 7H20M6.5 7A2.5 2.5 0 004 9.5V19.5M6.5 7H20V17H6.5" />
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base sm:text-lg font-semibold tracking-tight text-slate-50">Local Book Stores</span>
+            <span class="text-[11px] sm:text-xs uppercase tracking-[0.2em] text-slate-400">Canada-wide discovery</span>
+          </div>
+        </a>
+        <a href="https://WebAutomatorHQ.github.io/local-book-stores-2026-01-21-eerfh" class="text-slate-200 hover:text-emerald-400 transition-colors duration-300 text-sm font-medium">
+          ← Back
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- Blog Hero / Intro Section -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0ea?w=1600&h=900&fit=crop&q=80"
+          alt="Cozy local bookstore with shelves of books"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/85 to-slate-950/95"></div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 sm:pt-20 sm:pb-28 lg:pt-28 lg:pb-32">
+        <div class="max-w-4xl">
+          <div class="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-slate-950/60 px-3 py-1 text-xs font-medium tracking-[0.2em] uppercase text-emerald-300 shadow-md shadow-emerald-500/20 mb-6">
+            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            Insights for Canadian book lovers
+          </div>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-50 leading-tight mb-4">
+            Our Blog,
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400">
+              stories beyond the shelves.
+            </span>
+          </h1>
+          <p class="text-lg sm:text-xl md:text-2xl text-slate-200/90 leading-relaxed mb-6">
+            Practical guides, bookstore spotlights, and city-by-city tips to help you find, visit, and support local book stores across Canada with confidence.
+          </p>
+          <p class="text-sm sm:text-base text-slate-300/80 max-w-2xl mb-8">
+            The Local Book Stores blog is where we dig deeper into the reading culture that lives inside Canadian bookshops. Expect step-by-step “how-to” articles for smarter bookstore searches, curated city itineraries, conversations with booksellers, and reflections on why physical shops still matter in a digital-first world.
+          </p>
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <a
+              href="#blog-listing"
+              class="inline-flex items-center justify-center px-6 py-3 text-sm sm:text-base font-semibold rounded-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400 text-slate-950 shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/60 transform hover:scale-105 active:scale-95 transition-all duration-300"
+            >
+              Browse latest articles
+              <span class="ml-2 inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-950/20">
+                <i class="fa-solid fa-arrow-down text-xs"></i>
+              </span>
+            </a>
+            <p class="text-xs sm:text-sm text-slate-400 max-w-sm">
+              New posts focus on city-based discovery, indie shop support, and smarter ways to plan your next bookstore visit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Purpose / Overview Section -->
+    <section id="blog-purpose" class="py-20 sm:py-24 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-50 mb-4">
+              Why we created the
+              <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400">
+                Local Book Stores Blog
+              </span>
+            </h2>
+            <p class="text-sm sm:text-base text-slate-300 mb-4">
+              Our platform already makes it easy to find local book stores in Canadian cities—but discovery is only the beginning. The blog exists to help you go deeper: to understand the different types of shops you’ll encounter, learn how to plan meaningful visits, and see how your choices directly support local communities.
+            </p>
+            <p class="text-sm sm:text-base text-slate-300 mb-4">
+              Each article is written with Canadian readers in mind, whether you are planning a cross-country road trip, exploring a new neighbourhood, or simply trying to replace endless “bookstores near me” searches with something more intentional, human, and city-aware.
+            </p>
+            <p class="text-sm sm:text-base text-slate-300">
+              Over time, this space will grow into a living companion to the directory: a place where guides, interviews, and itineraries help you turn simple searches into real-world bookstore experiences worth remembering.
+            </p>
+          </div>
+          <div class="space-y-5">
+            <div class="rounded-2xl border border-slate-800 bg-slate-950/80 p-5 shadow-md shadow-slate-950/80">
+              <h3 class="text-lg font-semibold text-slate-50 mb-2">What you can expect to read</h3>
+              <ul class="space-y-2 text-sm text-slate-300">
+                <li class="flex items-start gap-2">
+                  <i class="fa-regular fa-circle-check mt-0.5 text-emerald-400"></i>
+                  <span><span class="font-semibold text-slate-100">Step-by-step guides</span> for using city-based directories to replace generic map searches.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-regular fa-circle-check mt-0.5 text-cyan-400"></i>
+                  <span><span class="font-semibold text-slate-100">City spotlights</span> that outline must-visit bookstores, suggested routes, and neighbourhood vibes.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-regular fa-circle-check mt-0.5 text-indigo-400"></i>
+                  <span><span class="font-semibold text-slate-100">Bookseller stories</span> featuring the people behind Canadian indie shops and their communities.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-regular fa-circle-check mt-0.5 text-emerald-400"></i>
+                  <span><span class="font-semibold text-slate-100">Practical tips</span> for supporting bookstores beyond a single purchase—events, reviews, gift cards, and more.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5 shadow-md shadow-slate-950/80">
+              <h3 class="text-lg font-semibold text-slate-50 mb-2">Who the blog is for</h3>
+              <p class="text-sm text-slate-300 mb-3">
+                If you recognize yourself in any of these, this blog is written with you in mind:
+              </p>
+              <ul class="space-y-1.5 text-sm text-slate-300">
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  <span>Readers who want to turn bookstore visits into part of their weekly or travel routine.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
+                  <span>Families looking for kid-friendly bookstores and event-driven outings.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-400"></span>
+                  <span>Bookish travellers planning cross-city or cross-country bookstore crawls.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  <span>Authors, publishers, and booksellers interested in how readers discover their spaces.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Listing Section -->
+    <section id="blog-listing" class="py-20 sm:py-24 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Heading -->
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-50 mb-3">
+              Our Blog,
+              <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400">
+                latest articles.
+              </span>
+            </h2>
+            <p class="text-sm sm:text-base text-slate-300 max-w-2xl">
+              Start with our featured guide, then come back regularly as we publish new posts about Canadian bookstores, city itineraries, and practical tips for supporting the shops you love.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-3 text-xs sm:text-sm">
+            <span class="inline-flex items-center gap-2 rounded-full bg-slate-900 border border-emerald-400/50 px-3 py-1 text-emerald-300 font-medium">
+              <i class="fa-regular fa-newspaper text-[11px]"></i>
+              Guides & how-tos
+            </span>
+            <span class="inline-flex items-center gap-2 rounded-full bg-slate-900 border border-cyan-400/40 px-3 py-1 text-cyan-300 font-medium">
+              <i class="fa-regular fa-compass text-[11px]"></i>
+              City spotlights
+            </span>
+            <span class="inline-flex items-center gap-2 rounded-full bg-slate-900 border border-indigo-400/40 px-3 py-1 text-indigo-300 font-medium">
+              <i class="fa-regular fa-heart text-[11px]"></i>
+              Community stories
+            </span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)] gap-8 lg:gap-10 items-start">
+          <!-- Featured / Latest Blog Post -->
+          <article class="group relative rounded-2xl border border-slate-800 bg-slate-950/80 p-6 sm:p-7 flex flex-col gap-4 shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-emerald-500/30 hover:border-emerald-400/70 transform hover:scale-[1.02] transition-all duration-300">
+            <div class="flex items-center justify-between gap-3">
+              <div class="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 border border-emerald-400/60 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-emerald-300">
+                Latest
+              </div>
+              <p class="text-xs text-slate-400 flex items-center gap-2">
+                <i class="fa-regular fa-calendar text-emerald-300"></i>
+                Published on
+                <span class="font-medium text-slate-200">1/21/2026</span>
+              </p>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-bold text-slate-50 leading-snug">
+              Getting Started with Our Platform
+            </h3>
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+              This guide shows Canadian readers how to move beyond generic “bookstores near me” searches and actually discover the best local shops. It explains why bookstores still matter, breaks down key store types—from indie and used to chains and children’s—and shares smarter search tactics that cut through online noise. You’ll learn how to use a city-based directory to plan efficient bookstore routes, adapt your strategy for big cities, mid-sized centres, and small towns, and support shops beyond a single purchase through events, reviews, gift cards, and social sharing. Spend less time searching and more time browsing real shelves.
+            </p>
+            <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+              <div class="flex items-center gap-3 text-xs text-slate-400">
+                <span class="inline-flex items-center gap-1.5 rounded-full bg-slate-900 border border-slate-700 px-3 py-1">
+                  <i class="fa-regular fa-bookmark text-emerald-300 text-[11px]"></i>
+                  <span>Getting Started</span>
+                </span>
+                <span class="inline-flex items-center gap-1.5 rounded-full bg-slate-900 border border-slate-700 px-3 py-1">
+                  <i class="fa-regular fa-map text-cyan-300 text-[11px]"></i>
+                  <span>City-based search</span>
+                </span>
+              </div>
+              <a
+                href="https://WebAutomatorHQ.github.io/local-book-stores-2026-01-21-eerfh/blog/getting-started-with-our-platform.html"
+                class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400 text-slate-950 shadow-md shadow-emerald-500/30 hover:shadow-xl hover:shadow-emerald-500/60 hover:scale-105 active:scale-95 transition-transform duration-300"
+              >
+                Read More
+                <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Sidebar: Blog Categories / Empty Future Posts Placeholder -->
+          <div class="space-y-6">
+            <!-- Blog categories / overview card -->
+            <div class="rounded-2xl border border-slate-800 bg-slate-950/80 p-5 sm:p-6 shadow-md shadow-slate-950/80">
+              <h3 class="text-lg font-semibold text-slate-50 mb-3">Browse by theme</h3>
+              <p class="text-xs sm:text-sm text-slate-300 mb-4">
+                As the blog grows, posts will be grouped into clear themes so you can quickly find the content that fits your next visit or reading mood.
+              </p>
+              <ul class="space-y-2 text-sm text-slate-300">
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-route mt-0.5 text-emerald-400 text-xs"></i>
+                  <span><span class="font-semibold text-slate-100">Planning & strategy:</span> articles that help you design efficient bookstore days in any city.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-city mt-0.5 text-cyan-400 text-xs"></i>
+                  <span><span class="font-semibold text-slate-100">City deep dives:</span> curated lists and sample routes for major and mid-sized Canadian centres.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-store mt-0.5 text-indigo-400 text-xs"></i>
+                  <span><span class="font-semibold text-slate-100">Bookstore features:</span> profiles of standout indie shops and how they serve their communities.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-users mt-0.5 text-emerald-400 text-xs"></i>
+                  <span><span class="font-semibold text-slate-100">Community & culture:</span> reflections on the role of bookstores in Canadian neighbourhoods.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Future posts placeholder -->
+            <div class="rounded-2xl border border-dashed border-slate-700 bg-slate-950/40 p-5 sm:p-6 shadow-md shadow-slate-950/60">
+              <h3 class="text-lg font-semibold text-slate-50 mb-2">More posts coming soon</h3>
+              <p class="text-xs sm:text-sm text-slate-300 mb-3">
+                This space will soon feature additional articles—city guides, interviews, and practical checklists—to help you turn every Canadian trip into a bookstore discovery.
+              </p>
+              <div class="flex flex-col gap-2 text-xs text-slate-400">
+                <div class="flex items-center gap-2">
+                  <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  <span>Stay tuned for “How to Plan a One-Day Bookstore Crawl in Toronto”.</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
+                  <span>Watch for “Finding Kid-Friendly Bookstores in Mid-Sized Canadian Cities”.</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="h-1.5 w-1.5 rounded-full bg-indigo-400"></span>
+                  <span>Look out for “Supporting Indie Shops Beyond a Single Purchase”.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid for future individual post cards (empty shell for now) -->
+        <div class="mt-12 border-t border-slate-800 pt-10">
+          <h3 class="text-xl sm:text-2xl font-semibold text-slate-50 mb-4">
+            Recent posts
+          </h3>
+          <p class="text-sm sm:text-base text-slate-300 mb-6 max-w-2xl">
+            As we publish more articles, they will appear here in a simple, card-based layout—making it easy to skim titles, dates, and topics before diving into full guides.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <!-- Empty placeholder card 1 -->
+            <article class="rounded-2xl border border-slate-800 bg-slate-950/60 p-5 flex flex-col gap-3 shadow-md shadow-slate-950/80">
+              <div class="h-8 w-24 rounded-full bg-slate-900 border border-slate-700 animate-pulse"></div>
+              <div class="h-5 w-3/4 rounded bg-slate-800 animate-pulse"></div>
+              <div class="space-y-2">
+                <div class="h-3 w-full rounded bg-slate-900 animate-pulse"></div>
+                <div class="h-3 w-5/6 rounded bg-slate-900 animate-pulse"></div>
+              </div>
+              <div class="mt-3 h-8 w-28 rounded-full bg-slate-900 border border-slate-700 animate-pulse"></div>
+            </article>
+            <!-- Empty placeholder card 2 -->
+            <article class="rounded-2xl border border-slate-800 bg-slate-950/60 p-5 flex flex-col gap-3 shadow-md shadow-slate-950/80">
+              <div class="h-8 w-24 rounded-full bg-slate-900 border border-slate-700 animate-pulse"></div>
+              <div class="h-5 w-2/3 rounded bg-slate-800 animate-pulse"></div>
+              <div class="space-y-2">
+                <div class="h-3 w-full rounded bg-slate-900 animate-pulse"></div>
+                <div class="h-3 w-4/5 rounded bg-slate-900 animate-pulse"></div>
+              </div>
+              <div class="mt-3 h-8 w-28 rounded-full bg-slate-900 border border-slate-700 animate-pulse"></div>
+            </article>
+            <!-- Empty placeholder card 3 -->
+            <article class="rounded-2xl border border-slate-800 bg-slate-950/60 p-5 flex flex-col gap-3 shadow-md shadow-slate-950/80">
+              <div class="h-8 w-24 rounded-full bg-slate-900 border border-slate-700 animate-pulse"></div>
+              <div class="h-5 w-4/5 rounded bg-slate-800 animate-pulse"></div>
+              <div class="space-y-2">
+                <div class="h-3 w-full rounded bg-slate-900 animate-pulse"></div>
+                <div class="h-3 w-3/4 rounded bg-slate-900 animate-pulse"></div>
+              </div>
+              <div class="mt-3 h-8 w-28 rounded-full bg-slate-900 border border-slate-700 animate-pulse"></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Policies / Info Strip -->
+    <section class="border-y border-slate-800 bg-slate-950/90">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs sm:text-sm">
+        <div class="flex items-center gap-3 text-slate-200">
+          <i class="fa-solid fa-truck-fast text-emerald-400"></i>
+          <div>
+            <p class="font-semibold">Fast Worldwide Shipping (5 days delivery)</p>
+            <p class="text-slate-400">When you order directly from participating stores.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 text-slate-200">
+          <i class="fa-solid fa-rotate-left text-cyan-400"></i>
+          <div>
+            <p class="font-semibold">100% Satisfaction Guarantee - Full refund upon return</p>
+            <p class="text-slate-400">Policies may vary by bookstore; check details before purchase.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 sm:py-24 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-[1.3fr_minmax(0,1fr)] gap-10 lg:gap-16 items-start">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-50 mb-3">
+              Get in touch with our team
+            </h2>
+            <p class="text-sm sm:text-base text-slate-300 mb-5">
+              Whether you are a reader with feedback, a bookstore owner who wants to be listed, or a partner interested in collaborating, we would love to hear from you.
+            </p>
+            <div class="flex flex-col gap-3 text-sm text-slate-300 mb-6">
+              <div class="flex items-center gap-3">
+                <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 border border-emerald-400/70 text-emerald-300">
+                  <i class="fa-regular fa-envelope text-sm"></i>
+                </span>
+                <div class="flex flex-col">
+                  <span class="text-xs uppercase tracking-[0.18em] text-slate-400">Email</span>
+                  <a href="mailto:contact@fredericsune.com" class="text-sm text-emerald-300 hover:text-emerald-200 transition-colors duration-300">
+                    contact@fredericsune.com
+                  </a>
+                </div>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-400">
+              We aim to respond within 2–3 business days and prioritize messages from Canadian bookstores and community organizations that help readers discover new stories.
+            </p>
+          </div>
+
+          <!-- Split layout contact form (inline compact) -->
+          <div class="rounded-2xl border border-slate-800 bg-slate-950/80 shadow-md shadow-slate-950/90 p-5 sm:p-6">
+            <h3 class="text-lg font-semibold text-slate-50 mb-3">Send us a quick message</h3>
+            <p class="text-xs sm:text-sm text-slate-300 mb-4">
+              Use this compact form for general questions. For detailed partnership inquiries, please email us directly.
+            </p>
+            <form class="space-y-3">
+              <div class="flex flex-col sm:flex-row gap-3">
+                <div class="w-full">
+                  <label for="name" class="block text-xs font-medium text-slate-300 mb-1">Name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Your name"
+                    class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/70 focus:border-emerald-400 transition duration-300"
+                  />
+                </div>
+                <div class="w-full">
+                  <label for="email" class="block text-xs font-medium text-slate-300 mb-1">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="you@example.com"
+                    class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/70 focus:border-emerald-400 transition duration-300"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="city" class="block text-xs font-medium text-slate-300 mb-1">City (optional)</label>
+                <input
+                  id="city"
+                  type="text"
+                  placeholder="e.g., Toronto, Vancouver, Halifax"
+                  class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/70 focus:border-emerald-400 transition duration-300"
+                />
+              </div>
+
+              <div>
+                <label for="message" class="block text-xs font-medium text-slate-300 mb-1">Message</label>
+                <textarea
+                  id="message"
+                  rows="3"
+                  placeholder="Tell us how we can help..."
+                  class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/70 focus:border-emerald-400 transition duration-300"
+                ></textarea>
+              </div>
+
+              <div class="flex items-center justify-between gap-3 pt-1">
+                <button
+                  type="submit"
+                  class="inline-flex items-center justify-center px-4 py-2 text-xs sm:text-sm font-semibold rounded-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400 text-slate-950 shadow-md shadow-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/60 hover:scale-105 active:scale-95 transition-transform duration-300"
+                >
+                  Send message
+                  <i class="fa-solid fa-paper-plane ml-2 text-[11px]"></i>
+                </button>
+                <span class="text-[10px] sm:text-xs text-slate-400">
+                  This form is for demonstration only. For urgent requests, email us directly.
+                </span>
+              </div>
+
+              <p class="text-[10px] text-emerald-300 mt-1 hidden" aria-live="polite">
+                Message sent successfully! We will get back to you soon.
+              </p>
+              <p class="text-[10px] text-red-400 mt-1 hidden" aria-live="polite">
+                Something went wrong. Please try again or email us at contact@fredericsune.com.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-slate-800 pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-10 border-b border-slate-800">
+        <!-- Column 1 -->
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="h-9 w-9 rounded-lg bg-gradient-to-br from-emerald-400 via-cyan-400 to-indigo-400 flex items-center justify-center shadow-lg shadow-emerald-500/30">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-950" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 19.5A2.5 2.5 0 016.5 17H20M4 4.5A2.5 2.5 0 016.5 7H20M6.5 7A2.5 2.5 0 004 9.5V19.5M6.5 7H20V17H6.5" />
+              </svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-base font-semibold tracking-tight text-slate-50">Local Book Stores</span>
+              <span class="text-[11px] uppercase tracking-[0.2em] text-slate-400">Canada-wide discovery</span>
+            </div>
+          </div>
+          <p class="text-sm text-slate-300 mb-4">
+            A modern, city-based way to find and support local book stores across Canada. Built for readers, travelers, families, and anyone who believes bookstores are worth discovering.
+          </p>
+          <div class="flex items-center gap-3 text-xs text-slate-400">
+            <i class="fa-regular fa-envelope text-emerald-400"></i>
+            <a href="mailto:contact@fredericsune.com" class="hover:text-emerald-300 transition-colors duration-300">
+              contact@fredericsune.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div>
+          <h3 class="text-sm font-semibold text-slate-100 mb-3">Navigation</h3>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li><a href="#home" class="hover:text-emerald-300 transition-colors duration-300">Home</a></li>
+            <li><a href="#blog-purpose" class="hover:text-emerald-300 transition-colors duration-300">Blog Purpose</a></li>
+            <li><a href="#blog-listing" class="hover:text-emerald-300 transition-colors duration-300">Latest Articles</a></li>
+            <li><a href="#contact" class="hover:text-emerald-300 transition-colors duration-300">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+          <h3 class="text-sm font-semibold text-slate-100 mb-3">Resources</h3>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li><a href="privacy.html" class="hover:text-emerald-300 transition-colors duration-300">Privacy Policy</a></li>
+            <li><a href="terms.html" class="hover:text-emerald-300 transition-colors duration-300">Terms of Service</a></li>
+            <li><a href="blog.html" class="hover:text-emerald-300 transition-colors duration-300">Blog</a></li>
+            <li><a href="https://fredericsune.com" class="hover:text-emerald-300 transition-colors duration-300">Platform Home</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div>
+          <h3 class="text-sm font-semibold text-slate-100 mb-3">Connect</h3>
+          <p class="text-sm text-slate-300 mb-3">
+            Follow our journey as we map out more Canadian cities and highlight bookstores worth visiting.
+          </p>
+          <div class="flex items-center gap-3 mb-4">
+            <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 border border-slate-700 text-slate-300 hover:text-emerald-300 hover:border-emerald-400 hover:bg-slate-900/70 transition-all duration-300">
+              <i class="fa-brands fa-twitter text-sm"></i>
+            </a>
+            <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 border border-slate-700 text-slate-300 hover:text-emerald-300 hover:border-emerald-400 hover:bg-slate-900/70 transition-all duration-300">
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+            <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 border border-slate-700 text-slate-300 hover:text-emerald-300 hover:border-emerald-400 hover:bg-slate-900/70 transition-all duration-300">
+              <i class="fa-brands fa-facebook-f text-sm"></i>
+            </a>
+            <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 border border-slate-700 text-slate-300 hover:text-emerald-300 hover:border-emerald-400 hover:bg-slate-900/70 transition-all duration-300">
+              <i class="fa-brands fa-linkedin-in text-sm"></i>
+            </a>
+          </div>
+          <a
+            href="https://fredericsune.com"
+            class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold rounded-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400 text-slate-950 shadow-md shadow-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/60 hover:scale-105 active:scale-95 transition-transform duration-300"
+          >
+            Explore the directory
+            <i class="fa-solid fa-arrow-right ml-2 text-[11px]"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-[11px] sm:text-xs text-slate-500">
+        <p>© <span id="year"></span> Local Book Stores. All rights reserved.</p>
+        <p>Built to help readers find and support local Canadian bookstores, one city at a time.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Required JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set current year
+      const yearSpan = document.getElementById('year');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+
+      // Smooth Scroll for Anchor Links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href !== '#' && href.length > 1) {
+            const target = document.querySelector(href);
+            if (target) {
+              e.preventDefault();
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
