@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Local Book Stores | Find Local Book Stores in Canada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Discover local book stores across Canada by city. Quickly find independent and chain bookstores near you, compare options, and support local businesses." />
+  <meta name="keywords" content="local book stores, bookstores in Canada, bookshops near me, Canadian book stores, indie bookstores" />
+  <meta name="author" content="Local Book Stores" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Base styles -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-50 antialiased">
+  <!-- Announcement Bar -->
+  <div class="bg-gradient-to-r from-emerald-500 via-cyan-500 to-indigo-500 text-slate-900 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-4">
+      <p class="font-medium tracking-wide">
+        Fast Worldwide Shipping (5 days delivery) on all book orders.
+      </p>
+      <p class="hidden sm:block text-xs font-semibold uppercase tracking-wider">
+        100% Satisfaction Guarantee - Full refund upon return
+      </p>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur border-b border-slate-800">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-4">
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <div class="h-9 w-9 rounded-lg bg-gradient-to-br from-emerald-400 via-cyan-400 to-indigo-400 flex items-center justify-center shadow-lg shadow-emerald-500/30">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-950" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 19.5A2.5 2.5 0 016.5 17H20M4 4.5A2.5 2.5 0 016.5 7H20M6.5 7A2.5 2.5 0 004 9.5V19.5M6.5 7H20V17H6.5" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-semibold tracking-tight text-slate-50">Local Book Stores</span>
+          <span class="text-[11px] sm:text-xs uppercase tracking-[0.2em] text-slate-400">Canada-wide discovery</span>
+        </div>
+      </div>
+
+      <!-- Center Nav (Desktop) -->
+      <div class="hidden md:flex items-center justify-center gap-6 lg:gap-8 text-sm font-medium">
+        <a href="#home" class="text-slate-200 hover:text-emerald-400 transition-colors duration-300">Home</a>
+        <a href="#features" class="text-slate-200 hover:text-emerald-400 transition-colors duration-300">Features</a>
+        <a href="#benefits" class="text-slate-200 hover:text-emerald-400 transition-colors duration-300">Benefits</a>
+        <a href="#about" class="text-slate-200 hover:text-emerald-400 transition-colors duration-300">About</a>
+        <a href="#testimonials" class="text-slate-200 hover:text-emerald-400 transition-colors duration-300">Testimonials</a>
+        <a href="#faq" class="text-slate-200 hover:text-emerald-400 transition-colors duration-300">FAQ</a>
+        <a href="#contact" class="text-slate-200 hover:text-emerald-400 transition-colors duration-300">Contact</a>
+      </div>
+
+      <!-- Right: Search + Button -->
+      <div class="flex items-center gap-3">
+        <!-- Search -->
+        <form class="hidden sm:flex items-center gap-2 bg-slate-900/80 border border-slate-700 rounded-full px-3 py-1.5 shadow-md shadow-slate-950/50 focus-within:border-emerald-400 focus-within:ring-1 focus-within:ring-emerald-400/60 transition duration-300">
+          <i class="fa-solid fa-magnifying-glass text-slate-400 text-xs"></i>
+          <input
+            type="search"
+            aria-label="Search by city or bookstore name"
+            placeholder="Search city or store..."
+            class="bg-transparent border-0 focus:ring-0 focus:outline-none text-xs text-slate-100 placeholder-slate-500"
+          />
+        </form>
+
+        <!-- Buy Now / CTA -->
+        <a
+          href="https://fredericsune.com"
+          class="inline-flex items-center justify-center px-4 sm:px-5 py-2 text-xs sm:text-sm font-semibold rounded-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400 text-slate-950 shadow-md shadow-emerald-500/30 hover:shadow-xl hover:shadow-emerald-500/40 hover:scale-105 active:scale-95 transition-transform duration-300"
+        >
+          Visit Platform
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="mobile-menu-button md:hidden inline-flex items-center justify-center rounded-md border border-slate-700 px-2.5 py-2 text-slate-100 hover:bg-slate-900 hover:border-emerald-400 transition-colors duration-300"
+          aria-label="Toggle navigation menu"
+        >
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden border-t border-slate-800 bg-slate-950/95 backdrop-blur-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col gap-3 text-sm">
+        <a href="#home" class="py-1 text-slate-200 hover:text-emerald-400 transition-colors duration-300">Home</a>
+        <a href="#features" class="py-1 text-slate-200 hover:text-emerald-400 transition-colors duration-300">Features</a>
+        <a href="#benefits" class="py-1 text-slate-200 hover:text-emerald-400 transition-colors duration-300">Benefits</a>
+        <a href="#about" class="py-1 text-slate-200 hover:text-emerald-400 transition-colors duration-300">About</a>
+        <a href="#testimonials" class="py-1 text-slate-200 hover:text-emerald-400 transition-colors duration-300">Testimonials</a>
+        <a href="#faq" class="py-1 text-slate-200 hover:text-emerald-400 transition-colors duration-300">FAQ</a>
+        <a href="#contact" class="py-1 text-slate-200 hover:text-emerald-400 transition-colors duration-300">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0ea?w=1600&h=900&fit=crop&q=80"
+          alt="Cozy local bookstore with shelves of books"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/85 to-slate-950/95"></div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 sm:pt-20 sm:pb-28 lg:pt-28 lg:pb-32">
+        <div class="max-w-4xl">
+          <div class="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-slate-950/60 px-3 py-1 text-xs font-medium tracking-[0.2em] uppercase text-emerald-300 shadow-md shadow-emerald-500/20 mb-6">
+            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            Discover Local Book Stores in Canada
+          </div>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-50 leading-tight mb-4">
+            Local Book Stores,
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400">
+              right around the corner.
+            </span>
+          </h1>
+          <p class="text-lg sm:text-xl md:text-2xl text-slate-200/90 leading-relaxed mb-6">
+            Find local book stores in Canada by city, compare shelves before you go, and support the independent shops that keep stories alive in your community.
+          </p>
+          <p class="text-sm sm:text-base text-slate-300/80 max-w-2xl mb-8">
+            Whether you are searching for a rare first edition in Vancouver, a cozy reading nook in Halifax, or the closest children’s bookstore in Toronto, our city-based directory connects you instantly to the shelves that matter most.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-10">
+            <a
+              href="https://fredericsune.com"
+              class="inline-flex items-center justify-center px-6 py-3 text-sm sm:text-base font-semibold rounded-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400 text-slate-950 shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/60 transform hover:scale-105 active:scale-95 transition-all duration-300"
+            >
+              Explore Stores Near You
+              <span class="ml-2 inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-950/20">
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </span>
+            </a>
+            <div class="flex items-center gap-3 text-xs sm:text-sm text-slate-300">
+              <div class="flex -space-x-2">
+                <div class="h-8 w-8 rounded-full border border-slate-900 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=80&h=80&fit=crop&q=80');"></div>
+                <div class="h-8 w-8 rounded-full border border-slate-900 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=80&h=80&fit=crop&q=80');"></div>
+                <div class="h-8 w-8 rounded-full border border-slate-900 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&q=80');"></div>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-semibold text-slate-100">Trusted by book lovers nationwide</span>
+                <span class="text-[11px] uppercase tracking-[0.18em] text-emerald-300">From Vancouver to St. John’s</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Stats -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl">
+            <div class="rounded-2xl border border-slate-800 bg-slate-950/70 px-4 py-3 shadow-md shadow-slate-950/70 hover:shadow-xl hover:border-emerald-400/70 transition-all duration-300 hover:-translate-y-0.5">
+              <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400 mb-1">Cities Covered</p>
+              <p class="text-2xl font-bold text-emerald-400 tracking-tight">250+</p>
+              <p class="text-xs text-slate-400 mt-1">From major hubs to hidden small towns.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-950/70 px-4 py-3 shadow-md shadow-slate-950/70 hover:shadow-xl hover:border-cyan-400/70 transition-all duration-300 hover:-translate-y-0.5">
+              <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400 mb-1">Book Stores Listed</p>
+              <p class="text-2xl font-bold text-cyan-400 tracking-tight">1,800+</p>
+              <p class="text-xs text-slate-400 mt-1">Independent, chains, specialty shops & more.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-950/70 px-4 py-3 shadow-md shadow-slate-950/70 hover:shadow-xl hover:border-indigo-400/70 transition-all duration-300 hover:-translate-y-0.5">
+              <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400 mb-1">Average Search Time</p>
+              <p class="text-2xl font-bold text-indigo-400 tracking-tight">&lt; 30s</p>
+              <p class="text-xs text-slate-400 mt-1">From search to the perfect local match.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 sm:py-24 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-50 mb-3">
+              Browse Every Shelf,
+              <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400">
+                city by city.
+              </span>
+            </h2>
+            <p class="text-sm sm:text-base text-slate-300 max-w-2xl">
+              Our curated directory of local book stores in Canada is organized by city, neighborhood, and specialty so you can instantly see what’s nearby—no more endless map scrolling or outdated listings.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-3 text-xs sm:text-sm">
+            <span class="inline-flex items-center gap-2 rounded-full bg-slate-900 border border-emerald-400/50 px-3 py-1 text-emerald-300 font-medium">
+              <i class="fa-regular fa-map text-[11px]"></i>
+              City-based search
+            </span>
+            <span class="inline-flex items-center gap-2 rounded-full bg-slate-900 border border-cyan-400/40 px-3 py-1 text-cyan-300 font-medium">
+              <i class="fa-regular fa-compass text-[11px]"></i>
+              “Near me” discovery
+            </span>
+            <span class="inline-flex items-center gap-2 rounded-full bg-slate-900 border border-indigo-400/40 px-3 py-1 text-indigo-300 font-medium">
+              <i class="fa-regular fa-star text-[11px]"></i>
+              Curated local gems
+            </span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <!-- Feature Card 1 -->
+          <article class="group relative rounded-2xl border border-slate-800 bg-slate-950/80 p-6 flex flex-col gap-3 shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-emerald-500/30 hover:border-emerald-400/70 transform hover:scale-[1.02] transition-all duration-300">
+            <div class="flex items-center justify-between gap-3">
+              <div class="h-10 w-10 rounded-xl bg-emerald-500/10 border border-emerald-400/60 flex items-center justify-center text-emerald-300 shadow-sm shadow-emerald-500/40">
+                <i class="fa-regular fa-map text-lg"></i>
+              </div>
+              <span class="text-[11px] uppercase tracking-[0.22em] text-emerald-300 font-semibold">City Index</span>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-50">City-level bookstore listings</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Browse a structured list of local book stores in Canada, organized per city so you can focus on the communities that matter most to you—whether you live there or you’re just visiting.
+            </p>
+            <ul class="mt-2 space-y-1.5 text-sm text-slate-300">
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                <span>Discover independent and chain stores grouped by major and mid-sized Canadian cities.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                <span>Filter by genres, specialties, and services like cafés, events, or used books.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Feature Card 2 -->
+          <article class="group relative rounded-2xl border border-slate-800 bg-slate-950/80 p-6 flex flex-col gap-3 shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-cyan-500/30 hover:border-cyan-400/70 transform hover:scale-[1.02] transition-all duration-300">
+            <div class="flex items-center justify-between gap-3">
+              <div class="h-10 w-10 rounded-xl bg-cyan-500/10 border border-cyan-400/60 flex items-center justify-center text-cyan-300 shadow-sm shadow-cyan-500/40">
+                <i class="fa-regular fa-compass text-lg"></i>
+              </div>
+              <span class="text-[11px] uppercase tracking-[0.22em] text-cyan-300 font-semibold">Near You</span>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-50">“Near me” local discovery</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Instantly surface the nearest book stores based on your city search. See addresses, quick details, and key highlights at a glance to choose the perfect stop for your next book hunt.
+            </p>
+            <ul class="mt-2 space-y-1.5 text-sm text-slate-300">
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
+                <span>Quick “near me” suggestions tailored to where you are or where you’re headed.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
+                <span>Save time planning your next bookstore crawl across multiple neighborhoods.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Feature Card 3 -->
+          <article class="group relative rounded-2xl border border-slate-800 bg-slate-950/80 p-6 flex flex-col gap-3 shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-indigo-500/30 hover:border-indigo-400/70 transform hover:scale-[1.02] transition-all duration-300">
+            <div class="flex items-center justify-between gap-3">
+              <div class="h-10 w-10 rounded-xl bg-indigo-500/10 border border-indigo-400/60 flex items-center justify-center text-indigo-300 shadow-sm shadow-indigo-500/40">
+                <i class="fa-regular fa-bookmark text-lg"></i>
+              </div>
+              <span class="text-[11px] uppercase tracking-[0.22em] text-indigo-300 font-semibold">Curated</span>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-50">Curated local favourites</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              From cozy indie shops to iconic flagship stores, we highlight stand-out book stores in every Canadian city so you can experience the best each area has to offer.
+            </p>
+            <ul class="mt-2 space-y-1.5 text-sm text-slate-300">
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-400"></span>
+                <span>Spotlight badges for bookstores known for rare finds, events, and local authors.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-400"></span>
+                <span>Curated picks help visitors and locals alike skip the guesswork.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Feature Card 4 -->
+          <article class="group relative rounded-2xl border border-slate-800 bg-slate-950/80 p-6 flex flex-col gap-3 shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-emerald-500/30 hover:border-emerald-400/70 transform hover:scale-[1.02] transition-all duration-300">
+            <div class="flex items-center justify-between gap-3">
+              <div class="h-10 w-10 rounded-xl bg-emerald-500/10 border border-emerald-400/60 flex items-center justify-center text-emerald-300 shadow-sm shadow-emerald-500/40">
+                <i class="fa-regular fa-building text-lg"></i>
+              </div>
+              <span class="text-[11px] uppercase tracking-[0.22em] text-emerald-300 font-semibold">Local Focus</span>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-50">Independent & chain coverage</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Balance the charm of indie shops with the convenience of larger chains. Our listings span local favorites, used book stores, specialty shops, and well-known brands.
+            </p>
+            <ul class="mt-2 space-y-1.5 text-sm text-slate-300">
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                <span>Find everything from niche poetry stores to university campus bookstores.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                <span>Support local while still having access to the big names you know.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Feature Card 5 -->
+          <article class="group relative rounded-2xl border border-slate-800 bg-slate-950/80 p-6 flex flex-col gap-3 shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-cyan-500/30 hover:border-cyan-400/70 transform hover:scale-[1.02] transition-all duration-300">
+            <div class="flex items-center justify-between gap-3">
+              <div class="h-10 w-10 rounded-xl bg-cyan-500/10 border border-cyan-400/60 flex items-center justify-center text-cyan-300 shadow-sm shadow-cyan-500/40">
+                <i class="fa-regular fa-clock text-lg"></i>
+              </div>
+              <span class="text-[11px] uppercase tracking-[0.22em] text-cyan-300 font-semibold">Time Saver</span>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-50">Up-to-date city insights</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Skip the outdated listings. Our city pages highlight currently active stores and practical details so you can spend more time browsing books and less time verifying information.
+            </p>
+            <ul class="mt-2 space-y-1.5 text-sm text-slate-300">
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
+                <span>See essential details at a glance: neighborhood, specialties, and vibe.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
+                <span>Reduce planning time for trips and book-themed weekends.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Feature Card 6 -->
+          <article class="group relative rounded-2xl border border-slate-800 bg-slate-950/80 p-6 flex flex-col gap-3 shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-indigo-500/30 hover:border-indigo-400/70 transform hover:scale-[1.02] transition-all duration-300">
+            <div class="flex items-center justify-between gap-3">
+              <div class="h-10 w-10 rounded-xl bg-indigo-500/10 border border-indigo-400/60 flex items-center justify-center text-indigo-300 shadow-sm shadow-indigo-500/40">
+                <i class="fa-regular fa-heart text-lg"></i>
+              </div>
+              <span class="text-[11px] uppercase tracking-[0.22em] text-indigo-300 font-semibold">Community</span>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-50">Built for Canadian book lovers</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              At its core, our platform exists to connect readers with the communities that keep Canadian stories in circulation, one neighborhood bookstore at a time.
+            </p>
+            <ul class="mt-2 space-y-1.5 text-sm text-slate-300">
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-400"></span>
+                <span>Celebrate the diversity of reading cultures from coast to coast.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-400"></span>
+                <span>Help sustain local jobs, authors, and community hubs.</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 sm:py-24 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-50 mb-3">
+            Find a local book store near you,
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400">
+              effortlessly.
+            </span>
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto">
+            Our experience is designed for readers first. Every step—from search to discovery—removes friction so you can get from “I need a bookstore” to “I’m walking through the door” in minutes, not hours.
+          </p>
+        </div>
+
+        <div class="space-y-12 sm:space-y-16">
+          <!-- Benefit 1 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white/5 rounded-3xl border border-slate-800/80 p-6 sm:p-8 lg:p-10">
+            <div class="order-1">
+              <h3 class="text-2xl font-semibold text-slate-50 mb-3">
+                Find a local book store near me easily
+              </h3>
+              <p class="text-sm sm:text-base text-slate-300 mb-4">
+                Type a Canadian city and instantly see a curated list of nearby book stores. No cluttered map pins, no overwhelming search results—just a clean, organized view of where you should go next.
+              </p>
+              <p class="text-sm sm:text-base text-slate-300 mb-5">
+                Each city page is structured to highlight essential details, from the types of books offered to the atmosphere you can expect. Whether you crave a quiet reading nook, a bustling cultural hub, or a family-friendly shop, your next bookstore is only a few clicks away.
+              </p>
+              <ul class="space-y-2 text-sm text-slate-300 mb-6">
+                <li class="flex items-start gap-2">
+                  <i class="fa-regular fa-circle-check mt-0.5 text-emerald-400"></i>
+                  <span>Search by city, then refine your choices based on style, specialty, or vibe.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-regular fa-circle-check mt-0.5 text-emerald-400"></i>
+                  <span>Skip generic results and instantly see bookstores that real readers care about.</span>
+                </li>
+              </ul>
+              <a
+                href="https://fredericsune.com"
+                class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400 text-slate-950 shadow-md shadow-emerald-500/30 hover:shadow-xl hover:shadow-emerald-500/60 hover:scale-105 active:scale-95 transition-transform duration-300"
+              >
+                Start your city search
+                <i class="fa-solid fa-location-dot ml-2 text-xs"></i>
+              </a>
+            </div>
+            <div class="order-2">
+              <div class="relative rounded-2xl overflow-hidden border border-slate-700 bg-slate-900 shadow-lg shadow-slate-950/80">
+                <img
+                  src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=800&h=600&fit=crop&q=80"
+                  alt="Person browsing books in a local Canadian bookstore"
+                  class="w-full h-full object-cover transform group-hover:scale-[1.02] transition-transform duration-500"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-slate-900/70 rounded-3xl border border-slate-800/80 p-6 sm:p-8 lg:p-10">
+            <div class="order-2 md:order-1">
+              <div class="relative rounded-2xl overflow-hidden border border-slate-700 bg-slate-900 shadow-lg shadow-slate-950/80">
+                <img
+                  src="https://images.unsplash.com/photo-1535909339361-9b5c9c55b76a?w=800&h=600&fit=crop&q=80"
+                  alt="Organized bookshelves representing structured search and planning"
+                  class="w-full h-full object-cover transform group-hover:scale-[1.02] transition-transform duration-500"
+                />
+              </div>
+            </div>
+            <div class="order-1 md:order-2">
+              <h3 class="text-2xl font-semibold text-slate-50 mb-3">
+                Plan smarter bookstore visits in any Canadian city
+              </h3>
+              <p class="text-sm sm:text-base text-slate-300 mb-4">
+                When you are traveling or exploring a new neighbourhood, planning where to stop can be overwhelming. Our structured, city-specific lists turn that chaos into a clear, efficient route from one great store to the next.
+              </p>
+              <p class="text-sm sm:text-base text-slate-300 mb-5">
+                Instead of juggling multiple tabs and apps, you get a focused view of the bookstores that matter—helping you design literary walks, weekend crawls, or quick one-stop visits with confidence.
+              </p>
+              <ul class="space-y-2 text-sm text-slate-300 mb-6">
+                <li class="flex items-start gap-2">
+                  <i class="fa-regular fa-circle-check mt-0.5 text-cyan-400"></i>
+                  <span>Quickly compare neighborhoods and choose the ones that fit your schedule.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-regular fa-circle-check mt-0.5 text-cyan-400"></i>
+                  <span>Reduce planning time and focus more on browsing shelves and meeting booksellers.</span>
+                </li>
+              </ul>
+              <a
+                href="https://fredericsune.com"
+                class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-full bg-gradient-to-r from-cyan-400 via-emerald-400 to-indigo-400 text-slate-950 shadow-md shadow-cyan-500/30 hover:shadow-xl hover:shadow-cyan-500/60 hover:scale-105 active:scale-95 transition-transform duration-300"
+              >
+                Explore Canadian cities
+                <i class="fa-solid fa-city ml-2 text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white/5 rounded-3xl border border-slate-800/80 p-6 sm:p-8 lg:p-10">
+            <div class="order-1">
+              <h3 class="text-2xl font-semibold text-slate-50 mb-3">
+                Support local communities with every visit
+              </h3>
+              <p class="text-sm sm:text-base text-slate-300 mb-4">
+                Each time you choose a nearby Canadian bookstore, you’re doing more than buying a book—you’re supporting local jobs, authors, and community hubs. Our platform simply makes those choices easier and more visible.
+              </p>
+              <p class="text-sm sm:text-base text-slate-300 mb-5">
+                By surfacing lesser-known gems alongside household names, we help you discover spaces that host book clubs, author readings, and cultural events that strengthen neighborhoods across the country.
+              </p>
+              <ul class="space-y-2 text-sm text-slate-300 mb-6">
+                <li class="flex items-start gap-2">
+                  <i class="fa-regular fa-circle-check mt-0.5 text-indigo-400"></i>
+                  <span>Shift more of your book budget to independent Canadian shops that depend on local support.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-regular fa-circle-check mt-0.5 text-indigo-400"></i>
+                  <span>Feel confident that your spontaneous book trips are also community investments.</span>
+                </li>
+              </ul>
+              <a
+                href="https://fredericsune.com"
+                class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-full bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400 text-slate-950 shadow-md shadow-indigo-500/30 hover:shadow-xl hover:shadow-indigo-500/60 hover:scale-105 active:scale-95 transition-transform duration-300"
+              >
+                Discover local favourites
+                <i class="fa-solid fa-heart ml-2 text-xs"></i>
+              </a>
+            </div>
+            <div class="order-2">
+              <div class="relative rounded-2xl overflow-hidden border border-slate-700 bg-slate-900 shadow-lg shadow-slate-950/80">
+                <img
+                  src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=800&h=600&fit=crop&q=80"
+                  alt="Community-centric Canadian bookstore with people reading"
+                  class="w-full h-full object-cover transform group-hover:scale-[1.02] transition-transform duration-500"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-16 sm:py-20 lg:py-24">
+      <div class="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1522748906645-95b56abd1305?w=1600&h=900&fit=crop&q=80"
+          alt="Stack of books in a Canadian bookstore window"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/90 to-slate-950/70"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-50 mb-3">
+            Ready to discover your next local book store?
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 mb-8 max-w-2xl">
+            Start by choosing your Canadian city and let our directory do the rest. Within seconds, you will have a personalized list of nearby bookstores—organized, curated, and ready for your next literary adventure.
+          </p>
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <a
+              href="https://fredericsune.com"
+              class="inline-flex items-center justify-center px-6 py-3 text-sm sm:text-base font-semibold rounded-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400 text-slate-950 shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/60 transform hover:scale-105 active:scale-95 transition-all duration-300"
+            >
+              Find a store in my city
+              <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+            </a>
+            <p class="text-xs sm:text-sm text-slate-400">
+              No logins, no clutter—just fast access to local Canadian bookstores.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 sm:py-24 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-50 mb-4">
+              About <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400">Local Book Stores</span>
+            </h2>
+            <p class="text-sm sm:text-base text-slate-300 mb-4">
+              Local Book Stores began as a passion project by Canadian readers who were frustrated with how hard it was to find accurate, city-specific bookstore information while traveling. After too many nights spent scrolling through generic map apps and outdated directories, we started building a focused, human-centric way to explore Canada’s bookstores. What began as a simple spreadsheet of favourite shops in Toronto and Montreal quickly evolved into a nationwide directory—curated through conversations with booksellers, local communities, and avid readers from coast to coast.
+            </p>
+            <p class="text-sm sm:text-base text-slate-300">
+              Our mission is to make it effortless for anyone in Canada to find and support local book stores in their city. We believe that bookstores are more than retail spaces; they are cultural anchors, gathering places, and gateways to new ideas. Every feature we build is guided by three core values: clarity, community, and care. Our vision is a connected network of Canadian book lovers who can easily discover, visit, and champion the independent and chain stores that keep reading culture vibrant in every neighborhood.
+            </p>
+          </div>
+          <div class="relative">
+            <div class="rounded-3xl border border-slate-800 bg-slate-900 shadow-xl shadow-slate-950/90 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&h=600&fit=crop&q=80"
+                alt="Team collaborating in front of bookshelves representing Local Book Stores team"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="absolute -bottom-5 -right-4 sm:-right-8 bg-slate-950/90 border border-emerald-400/60 rounded-2xl px-4 py-3 shadow-lg shadow-emerald-500/40 flex items-center gap-3">
+              <div class="h-8 w-8 rounded-xl bg-gradient-to-br from-emerald-400 via-cyan-400 to-indigo-400 flex items-center justify-center text-slate-950 text-sm font-bold">
+                CA
+              </div>
+              <div class="flex flex-col">
+                <span class="text-xs font-semibold text-slate-50">Built for Canada</span>
+                <span class="text-[11px] text-slate-300">By readers, for readers.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 sm:py-24 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-50 mb-3">
+              What Canadian readers are saying
+            </h2>
+            <p class="text-sm sm:text-base text-slate-300 max-w-2xl">
+              Local Book Stores is already helping readers, bloggers, and families find better bookshops across Canada. Here’s how people are using it in their daily lives.
+            </p>
+          </div>
+          <div class="flex items-center gap-3 text-xs sm:text-sm text-slate-300">
+            <i class="fa-solid fa-star text-emerald-400"></i>
+            <span>Average rating</span>
+            <span class="font-semibold text-slate-50">5.0 / 5</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          <!-- Testimonial 1 -->
+          <article class="group h-full rounded-2xl border border-slate-800 bg-slate-950/80 p-6 flex flex-col shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-emerald-500/30 hover:border-emerald-400/70 transform hover:scale-[1.02] transition-all duration-300">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full bg-cover bg-center border border-slate-700" style="background-image:url('https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?w=80&h=80&fit=crop&q=80');"></div>
+                <div>
+                  <p class="text-sm font-semibold text-slate-50">Amira Chen</p>
+                  <p class="text-xs text-slate-400">Travel Blogger, Vancouver</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-1 text-emerald-400 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-sm text-slate-300 mb-3">
+              “I used to spend an hour on every trip trying to figure out which indie bookstores were actually worth visiting. With Local Book Stores, I can pull up the city I’m flying into and see a concise list of shops that match my vibe. Planning my Toronto and Halifax trips got at least 3 hours faster.”
+            </p>
+            <p class="text-xs text-slate-400 mt-auto">
+              Now I build bookstore hops into my itineraries in minutes instead of sifting through random map results.
+            </p>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="group h-full rounded-2xl border border-slate-800 bg-slate-950/80 p-6 flex flex-col shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-cyan-500/30 hover:border-cyan-400/70 transform hover:scale-[1.02] transition-all duration-300">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full bg-cover bg-center border border-slate-700" style="background-image:url('https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=80&h=80&fit=crop&q=80');"></div>
+                <div>
+                  <p class="text-sm font-semibold text-slate-50">Jordan Patel</p>
+                  <p class="text-xs text-slate-400">Parent & Avid Reader, Calgary</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-1 text-emerald-400 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-sm text-slate-300 mb-3">
+              “Finding kid-friendly bookstores used to be guesswork. Now I type in my city and can immediately see which shops have children’s sections and events listed. We discovered two amazing local stores in Calgary that never showed up near the top of regular map searches.”
+            </p>
+            <p class="text-xs text-slate-400 mt-auto">
+              The per-city layout saves us from dragging kids around town to places that don’t fit what we need.
+            </p>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="group h-full rounded-2xl border border-slate-800 bg-slate-950/80 p-6 flex flex-col shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-indigo-500/30 hover:border-indigo-400/70 transform hover:scale-[1.02] transition-all duration-300">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full bg-cover bg-center border border-slate-700" style="background-image:url('https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=80&h=80&fit=crop&q=80');"></div>
+                <div>
+                  <p class="text-sm font-semibold text-slate-50">Sofia Martinez</p>
+                  <p class="text-xs text-slate-400">Owner, Indie Press Studio</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-1 text-emerald-400 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-sm text-slate-300 mb-3">
+              “We work with small Canadian publishers, so knowing which local shops in each city champion indie titles is essential. Local Book Stores lets us quickly pinpoint those partners city by city. It has cut our outreach research time by at least 50%.”
+            </p>
+            <p class="text-xs text-slate-400 mt-auto">
+              The clarity of the per-city lists and emphasis on local favourites turns what used to be cold research into targeted, meaningful connections.
+            </p>
+          </article>
+
+          <!-- Testimonial 4 -->
+          <article class="group h-full rounded-2xl border border-slate-800 bg-slate-950/80 p-6 flex flex-col shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-emerald-500/30 hover:border-emerald-400/70 transform hover:scale-[1.02] transition-all duration-300">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full bg-cover bg-center border border-slate-700" style="background-image:url('https://images.unsplash.com/photo-1544723795-3fb0b90cff2f?w=80&h=80&fit=crop&q=80');"></div>
+                <div>
+                  <p class="text-sm font-semibold text-slate-50">Marcus Li</p>
+                  <p class="text-xs text-slate-400">Software Engineer, Montreal</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-1 text-emerald-400 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-sm text-slate-300 mb-3">
+              “On weekends I like to explore new neighborhoods, and having a go-to list of bookstores per city has become part of my routine. I used Local Book Stores to map out a day in Ottawa and ended up visiting four shops I never would have found through generic search.”
+            </p>
+            <p class="text-xs text-slate-400 mt-auto">
+              It feels like having a local friend in every Canadian city who knows exactly which bookstores to recommend.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 sm:py-24 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-10">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-50 mb-3">
+            Frequently asked questions
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300">
+            Answers to common questions about how Local Book Stores works, how we list shops, and how you can make the most of the platform.
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-4">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item rounded-2xl border border-slate-800 bg-slate-950/80 shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-emerald-500/30 transition-all duration-300">
+            <button
+              type="button"
+              class="faq-question w-full flex items-center justify-between px-5 sm:px-6 py-4 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/70 rounded-2xl"
+              aria-expanded="false"
+            >
+              <span class="text-sm sm:text-base font-medium text-slate-50">
+                How does Local Book Stores help me find bookstores in my city?
+              </span>
+              <span class="faq-icon ml-3 flex h-7 w-7 items-center justify-center rounded-full bg-slate-900 border border-slate-700 text-slate-300 transition-transform duration-300">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </span>
+            </button>
+            <div class="faq-answer px-5 sm:px-6 pb-5 text-sm text-slate-300 hidden">
+              Local Book Stores organizes bookstores by Canadian city rather than relying solely on generic map searches. You simply select or search for your city, and we present a curated list of local book stores in that area. Each entry is structured to highlight the store’s neighborhood, focus (such as indie, used, children’s, or specialty), and notable features so you can quickly decide which shops to visit without sifting through unrelated results.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item rounded-2xl border border-slate-800 bg-slate-950/80 shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-cyan-500/30 transition-all duration-300">
+            <button
+              type="button"
+              class="faq-question w-full flex items-center justify-between px-5 sm:px-6 py-4 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 rounded-2xl"
+              aria-expanded="false"
+            >
+              <span class="text-sm sm:text-base font-medium text-slate-50">
+                Do you only list independent bookstores, or are chains included too?
+              </span>
+              <span class="faq-icon ml-3 flex h-7 w-7 items-center justify-center rounded-full bg-slate-900 border border-slate-700 text-slate-300 transition-transform duration-300">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </span>
+            </button>
+            <div class="faq-answer px-5 sm:px-6 pb-5 text-sm text-slate-300 hidden">
+              We believe readers should have a complete view of their options, so we include both independent bookstores and well-known chains across Canadian cities. Independent shops are clearly highlighted, and we pay special attention to stores that support local authors, host community events, or offer unique experiences. This balanced approach lets you choose when you want the intimacy of a neighborhood shop and when you prefer the convenience of a larger chain—all within a single, easy-to-browse directory.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item rounded-2xl border border-slate-800 bg-slate-950/80 shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-indigo-500/30 transition-all duration-300">
+            <button
+              type="button"
+              class="faq-question w-full flex items-center justify-between px-5 sm:px-6 py-4 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70 rounded-2xl"
+              aria-expanded="false"
+            >
+              <span class="text-sm sm:text-base font-medium text-slate-50">
+                I’m a bookstore owner. How can my store be added or updated?
+              </span>
+              <span class="faq-icon ml-3 flex h-7 w-7 items-center justify-center rounded-full bg-slate-900 border border-slate-700 text-slate-300 transition-transform duration-300">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </span>
+            </button>
+            <div class="faq-answer px-5 sm:px-6 pb-5 text-sm text-slate-300 hidden">
+              If you own or manage a bookstore in Canada and would like to be added or have your details updated, you can reach us directly at <a href="mailto:contact@fredericsune.com" class="text-emerald-300 hover:text-emerald-200 underline underline-offset-2">contact@fredericsune.com</a>. Include your city, address, website or social links, and a short description of what makes your store unique. We review submissions to ensure accuracy and alignment with our local-first focus, then update the relevant city listing so readers can find you quickly.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item rounded-2xl border border-slate-800 bg-slate-950/80 shadow-md shadow-slate-950/80 hover:shadow-xl hover:shadow-emerald-500/30 transition-all duration-300">
+            <button
+              type="button"
+              class="faq-question w-full flex items-center justify-between px-5 sm:px-6 py-4 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/70 rounded-2xl"
+              aria-expanded="false"
+            >
+              <span class="text-sm sm:text-base font-medium text-slate-50">
+                Is there a cost to use Local Book Stores, and do you sell books directly?
+              </span>
+              <span class="faq-icon ml-3 flex h-7 w-7 items-center justify-center rounded-full bg-slate-900 border border-slate-700 text-slate-300 transition-transform duration-300">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </span>
+            </button>
+            <div class="faq-answer px-5 sm:px-6 pb-5 text-sm text-slate-300 hidden">
+              Using Local Book Stores to search for shops in Canadian cities is free for readers. We do not sell books directly; instead, we focus on connecting you with the local bookstores that do. Our role is to provide a clear, up-to-date, city-based directory so you can decide where to buy in person or online from stores that match your preferences. This lets us stay neutral, highlight a wide variety of shops, and keep the spotlight firmly on the Canadian bookstores themselves.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Policies / Info Strip -->
+    <section class="border-y border-slate-800 bg-slate-950/90">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs sm:text-sm">
+        <div class="flex items-center gap-3 text-slate-200">
+          <i class="fa-solid fa-truck-fast text-emerald-400"></i>
+          <div>
+            <p class="font-semibold">Fast Worldwide Shipping (5 days delivery)</p>
+            <p class="text-slate-400">When you order directly from participating stores.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 text-slate-200">
+          <i class="fa-solid fa-rotate-left text-cyan-400"></i>
+          <div>
+            <p class="font-semibold">100% Satisfaction Guarantee - Full refund upon return</p>
+            <p class="text-slate-400">Policies may vary by bookstore; check details before purchase.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 sm:py-24 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-[1.3fr_minmax(0,1fr)] gap-10 lg:gap-16 items-start">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-50 mb-3">
+              Get in touch with our team
+            </h2>
+            <p class="text-sm sm:text-base text-slate-300 mb-5">
+              Whether you are a reader with feedback, a bookstore owner who wants to be listed, or a partner interested in collaborating, we would love to hear from you.
+            </p>
+            <div class="flex flex-col gap-3 text-sm text-slate-300 mb-6">
+              <div class="flex items-center gap-3">
+                <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 border border-emerald-400/70 text-emerald-300">
+                  <i class="fa-regular fa-envelope text-sm"></i>
+                </span>
+                <div class="flex flex-col">
+                  <span class="text-xs uppercase tracking-[0.18em] text-slate-400">Email</span>
+                  <a href="mailto:contact@fredericsune.com" class="text-sm text-emerald-300 hover:text-emerald-200 transition-colors duration-300">
+                    contact@fredericsune.com
+                  </a>
+                </div>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-400">
+              We aim to respond within 2–3 business days and prioritize messages from Canadian bookstores and community organizations that help readers discover new stories.
+            </p>
+          </div>
+
+          <!-- Split layout contact form (inline compact) -->
+          <div class="rounded-2xl border border-slate-800 bg-slate-950/80 shadow-md shadow-slate-950/90 p-5 sm:p-6">
+            <h3 class="text-lg font-semibold text-slate-50 mb-3">Send us a quick message</h3>
+            <p class="text-xs sm:text-sm text-slate-300 mb-4">
+              Use this compact form for general questions. For detailed partnership inquiries, please email us directly.
+            </p>
+            <form class="space-y-3">
+              <div class="flex flex-col sm:flex-row gap-3">
+                <div class="w-full">
+                  <label for="name" class="block text-xs font-medium text-slate-300 mb-1">Name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Your name"
+                    class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/70 focus:border-emerald-400 transition duration-300"
+                  />
+                </div>
+                <div class="w-full">
+                  <label for="email" class="block text-xs font-medium text-slate-300 mb-1">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="you@example.com"
+                    class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/70 focus:border-emerald-400 transition duration-300"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="city" class="block text-xs font-medium text-slate-300 mb-1">City (optional)</label>
+                <input
+                  id="city"
+                  type="text"
+                  placeholder="e.g., Toronto, Vancouver, Halifax"
+                  class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/70 focus:border-emerald-400 transition duration-300"
+                />
+              </div>
+
+              <div>
+                <label for="message" class="block text-xs font-medium text-slate-300 mb-1">Message</label>
+                <textarea
+                  id="message"
+                  rows="3"
+                  placeholder="Tell us how we can help..."
+                  class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/70 focus:border-emerald-400 transition duration-300"
+                ></textarea>
+              </div>
+
+              <div class="flex items-center justify-between gap-3 pt-1">
+                <button
+                  type="submit"
+                  class="inline-flex items-center justify-center px-4 py-2 text-xs sm:text-sm font-semibold rounded-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400 text-slate-950 shadow-md shadow-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/60 hover:scale-105 active:scale-95 transition-transform duration-300"
+                >
+                  Send message
+                  <i class="fa-solid fa-paper-plane ml-2 text-[11px]"></i>
+                </button>
+                <span class="text-[10px] sm:text-xs text-slate-400">
+                  This form is for demonstration only. For urgent requests, email us directly.
+                </span>
+              </div>
+
+              <p class="text-[10px] text-emerald-300 mt-1 hidden" aria-live="polite">
+                Message sent successfully! We will get back to you soon.
+              </p>
+              <p class="text-[10px] text-red-400 mt-1 hidden" aria-live="polite">
+                Something went wrong. Please try again or email us at contact@fredericsune.com.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-slate-800 pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-10 border-b border-slate-800">
+        <!-- Column 1 -->
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="h-9 w-9 rounded-lg bg-gradient-to-br from-emerald-400 via-cyan-400 to-indigo-400 flex items-center justify-center shadow-lg shadow-emerald-500/30">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-950" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 19.5A2.5 2.5 0 016.5 17H20M4 4.5A2.5 2.5 0 016.5 7H20M6.5 7A2.5 2.5 0 004 9.5V19.5M6.5 7H20V17H6.5" />
+              </svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-base font-semibold tracking-tight text-slate-50">Local Book Stores</span>
+              <span class="text-[11px] uppercase tracking-[0.2em] text-slate-400">Canada-wide discovery</span>
+            </div>
+          </div>
+          <p class="text-sm text-slate-300 mb-4">
+            A modern, city-based way to find and support local book stores across Canada. Built for readers, travelers, families, and anyone who believes bookstores are worth discovering.
+          </p>
+          <div class="flex items-center gap-3 text-xs text-slate-400">
+            <i class="fa-regular fa-envelope text-emerald-400"></i>
+            <a href="mailto:contact@fredericsune.com" class="hover:text-emerald-300 transition-colors duration-300">
+              contact@fredericsune.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div>
+          <h3 class="text-sm font-semibold text-slate-100 mb-3">Navigation</h3>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li><a href="#home" class="hover:text-emerald-300 transition-colors duration-300">Home</a></li>
+            <li><a href="#features" class="hover:text-emerald-300 transition-colors duration-300">Features</a></li>
+            <li><a href="#benefits" class="hover:text-emerald-300 transition-colors duration-300">Benefits</a></li>
+            <li><a href="#about" class="hover:text-emerald-300 transition-colors duration-300">About</a></li>
+            <li><a href="#testimonials" class="hover:text-emerald-300 transition-colors duration-300">Testimonials</a></li>
+            <li><a href="#faq" class="hover:text-emerald-300 transition-colors duration-300">FAQ</a></li>
+            <li><a href="#contact" class="hover:text-emerald-300 transition-colors duration-300">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+          <h3 class="text-sm font-semibold text-slate-100 mb-3">Resources</h3>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li><a href="privacy.html" class="hover:text-emerald-300 transition-colors duration-300">Privacy Policy</a></li>
+            <li><a href="terms.html" class="hover:text-emerald-300 transition-colors duration-300">Terms of Service</a></li>
+            <li><a href="blog.html" class="hover:text-emerald-300 transition-colors duration-300">Blog</a></li>
+            <li><a href="https://fredericsune.com" class="hover:text-emerald-300 transition-colors duration-300">Platform Home</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div>
+          <h3 class="text-sm font-semibold text-slate-100 mb-3">Connect</h3>
+          <p class="text-sm text-slate-300 mb-3">
+            Follow our journey as we map out more Canadian cities and highlight bookstores worth visiting.
+          </p>
+          <div class="flex items-center gap-3 mb-4">
+            <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 border border-slate-700 text-slate-300 hover:text-emerald-300 hover:border-emerald-400 hover:bg-slate-900/70 transition-all duration-300">
+              <i class="fa-brands fa-twitter text-sm"></i>
+            </a>
+            <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 border border-slate-700 text-slate-300 hover:text-emerald-300 hover:border-emerald-400 hover:bg-slate-900/70 transition-all duration-300">
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+            <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 border border-slate-700 text-slate-300 hover:text-emerald-300 hover:border-emerald-400 hover:bg-slate-900/70 transition-all duration-300">
+              <i class="fa-brands fa-facebook-f text-sm"></i>
+            </a>
+            <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 border border-slate-700 text-slate-300 hover:text-emerald-300 hover:border-emerald-400 hover:bg-slate-900/70 transition-all duration-300">
+              <i class="fa-brands fa-linkedin-in text-sm"></i>
+            </a>
+          </div>
+          <a
+            href="https://fredericsune.com"
+            class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold rounded-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-indigo-400 text-slate-950 shadow-md shadow-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/60 hover:scale-105 active:scale-95 transition-transform duration-300"
+          >
+            Explore the directory
+            <i class="fa-solid fa-arrow-right ml-2 text-[11px]"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-[11px] sm:text-xs text-slate-500">
+        <p>© <span id="year"></span> Local Book Stores. All rights reserved.</p>
+        <p>Built to help readers find and support local Canadian bookstores, one city at a time.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Required JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set current year
+      const yearSpan = document.getElementById('year');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+
+      // Mobile Menu Toggle
+      const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+      const mobileMenu = document.querySelector('header nav .mobile-menu');
+
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          const icon = mobileMenuButton.querySelector('i');
+          if (icon) {
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+          }
+        });
+
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            const icon = mobileMenuButton.querySelector('i');
+            if (icon) {
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            }
+          });
+        });
+      }
+
+      // FAQ Accordion Toggle
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+          question.addEventListener('click', () => {
+            const answer = item.querySelector('.faq-answer');
+            const isOpen = !answer.classList.contains('hidden');
+
+            // Close all other FAQ items
+            faqItems.forEach(otherItem => {
+              if (otherItem !== item) {
+                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+              }
+            });
+
+            // Toggle current item
+            answer?.classList.toggle('hidden');
+            item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+          });
+        }
+      });
+
+      // Smooth Scroll for Anchor Links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href !== '#' && href.length > 1) {
+            const target = document.querySelector(href);
+            if (target) {
+              e.preventDefault();
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
